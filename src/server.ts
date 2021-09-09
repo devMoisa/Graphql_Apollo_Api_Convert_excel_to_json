@@ -25,11 +25,6 @@ async function startServer() {
   await new Promise(r => app.listen({ port: process.env.APP_PORT }, r));
 
   console.log(
-    "\n Attention! the project is running in:",
-    process.env.PROJECT_STATUS,
-  );
-
-  console.log(
     ` Server ready at http://localhost:${process.env.APP_PORT}${server.graphqlPath} 🚀`,
   );
 }
